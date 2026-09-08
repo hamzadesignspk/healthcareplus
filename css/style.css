@@ -475,6 +475,29 @@ p { color: var(--text-muted); }
 
 .doctors-grid .doctor-card { flex: unset; }
 
+/* ---------- Equal Height Doctor Cards ---------- */
+
+.doctors-grid {
+  align-items: stretch;
+}
+
+.doctors-grid .doctor-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.doctors-grid .doctor-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.doctors-grid .doctor-body .btn-block {
+  margin-top: auto !important;
+}
+
+
 /* ---------- Why choose us ---------- */
 .why-grid { display: grid; grid-template-columns: 1fr; gap: 48px; align-items: center; }
 @media (min-width: 860px) { .why-grid { grid-template-columns: 0.95fr 1.05fr; } }
