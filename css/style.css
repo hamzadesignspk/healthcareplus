@@ -387,6 +387,15 @@ p { color: var(--text-muted); }
   max-width: 190px;
 }
 
+@media (max-width: 859px) {
+  .hero-float-card--top {
+    top: 0;
+    right: -6px;
+    transform: scale(0.82);
+    transform-origin: top right;
+  }
+}
+
 @media (min-width: 860px) {
   .hero-grid { grid-template-columns: 1.05fr 0.95fr; }
   .hero .lead { max-width: 460px; }
