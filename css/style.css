@@ -378,15 +378,7 @@ p { color: var(--text-muted); }
   max-width: 190px;
 }
 
-.hero-float-card--top {
-  position: absolute;
-  top: 24px;
-  right: -18px;
-  bottom: auto;
-  left: auto;
-  max-width: 190px;
-}
-
+/* ---------- Mobile Hero Floating Card Fix ---------- */
 @media (max-width: 859px) {
   .hero-float-card--top {
     top: 0;
@@ -395,6 +387,7 @@ p { color: var(--text-muted); }
     transform-origin: top right;
   }
 }
+
 
 @media (min-width: 860px) {
   .hero-grid { grid-template-columns: 1.05fr 0.95fr; }
@@ -492,29 +485,6 @@ p { color: var(--text-muted); }
 .doctor-meta svg { width: 15px; height: 15px; color: var(--blue); flex-shrink: 0; }
 
 .doctors-grid .doctor-card { flex: unset; }
-
-/* ---------- Equal Height Doctor Cards ---------- */
-
-.doctors-grid {
-  align-items: stretch;
-}
-
-.doctors-grid .doctor-card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.doctors-grid .doctor-body {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.doctors-grid .doctor-body .btn-block {
-  margin-top: auto !important;
-}
-
 
 /* ---------- Why choose us ---------- */
 .why-grid { display: grid; grid-template-columns: 1fr; gap: 48px; align-items: center; }
